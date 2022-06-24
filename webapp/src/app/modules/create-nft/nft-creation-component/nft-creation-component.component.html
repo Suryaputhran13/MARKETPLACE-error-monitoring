@@ -1,0 +1,83 @@
+<!-- Toolbar component section -->
+<app-toolbar></app-toolbar>
+
+<!-- Content section starts -->
+<div style="overflow-x: hidden;" class="grid grid-nogutter min-h-screen p-3 justify-content-center">
+    <div class="col-10 p-5">
+        <div class="grid grid-nogutter justify-content-center">
+            <div class="col-10 px-5">
+                <div class="grid grid-nogutter">
+                    <span class="text-3xl text-white"> Create new item</span>
+                </div>
+                <div class="grid grid-nogutter pt-5">
+                    <div class="col">
+                        <span class="text-lg text-white"> Image, Video, Audio or 3D Model*</span><br />
+                        <span class="text-xs text-300"> File type supported: JPG, PNG, GIF, SVG, MP4, WEBM, MP3, WAV, OGG, GLB. Max size 50mb.</span>
+                    </div>
+                </div>
+                <div class="grid grid-nogutter pt-5">
+                    <div class="col-fixed ">
+                        <div class="grid grid-nogutter border-dashed w-20rem h-12rem border-round border-300 align-items-center justify-content-center">
+                            <div><i class="pi pi-image text-7xl text-300 font-light"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-nogutter pt-5">
+                    <div class="col">
+                        <span class="text-lg text-white"> Preview image*</span><br />
+                        <span class="text-xs text-300"> You'll need to provide an image (PNG, JPG or GIF) for card display of your item.</span>
+                    </div>
+                </div>
+                <div class="grid grid-nogutter pt-5">
+                    <div class="col-fixed ">
+                        <div class="grid grid-nogutter border-dashed w-20rem h-20rem border-round border-300 align-items-center justify-content-center">
+                            <div><i class="pi pi-image text-7xl text-300 font-light"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-nogutter pt-5">
+                    <div class="col">
+                        <span class="text-lg text-white"> Name*</span><br />
+                    </div>
+                </div>
+                <div class="grid grid-nogutter pt-2">
+                    <div class="col-fixed ">
+                        <input class="w-30rem" type="text" pInputText />
+                    </div>
+                </div>
+
+                <div class="grid grid-nogutter pt-5">
+                    <div class="col">
+                        <span class="text-lg text-white"> Description</span><br />
+                    </div>
+                </div>
+                <div class="grid grid-nogutter pt-2">
+                    <div class="col-fixed ">
+                        <textarea class="w-30rem" rows="5" cols="30" pInputTextarea [autoResize]="true"></textarea>
+                    </div>
+                </div>
+
+                <div class="grid grid-nogutter pt-5">
+                    <div class="col">
+                        <span class="text-lg text-white"> Collection*</span><br />
+                    </div>
+                </div>
+                <div class="grid grid-nogutter pt-2">
+                    <div class="col-fixed w-30rem">
+                        <p-dropdown class="nftcolllection" [options]="collectionList" [(ngModel)]="selectedCollection" placeholder="Select a Collection" optionLabel="name" [showClear]="true"></p-dropdown>
+                    </div>
+                </div>
+
+                <div class="grid grid-nogutter pt-3">
+                    <div class="col">
+                        <p-button label="Create" ></p-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

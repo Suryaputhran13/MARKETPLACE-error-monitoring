@@ -1,0 +1,16 @@
+.mainToolbar {
+    min-height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgb(3, 1, 42);
+    background: -moz-linear-gradient(317deg, rgba(3, 1, 42, 1) 13%, rgba(6, 6, 81, 1) 87%, rgba(0, 7, 83, 1) 100%);
+    background: -webkit-linear-gradient(317deg, rgba(3, 1, 42, 1) 13%, rgba(6, 6, 81, 1) 87%, rgba(0, 7, 83, 1) 100%);
+    background: linear-gradient(317deg, rgba(3, 1, 42, 1) 13%, rgba(6, 6, 81, 1) 87%, rgba(0, 7, 83, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03012a", endColorstr="#000753", GradientType=1);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+    color: white;
+}

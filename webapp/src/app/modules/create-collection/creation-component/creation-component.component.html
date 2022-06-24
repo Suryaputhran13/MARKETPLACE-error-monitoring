@@ -1,0 +1,93 @@
+<!-- Toolbar component section -->
+<app-toolbar></app-toolbar>
+
+<!-- Content section starts -->
+<div style="overflow-x: hidden;" class="grid grid-nogutter min-h-screen p-3 justify-content-center">
+    <div class="col-10 p-5">
+        <div class="grid grid-nogutter justify-content-center">
+            <div class="col-10 px-5">
+                <div class="grid grid-nogutter">
+                    <span class="text-3xl text-white"> Create your collection</span>
+                </div>
+                <div class="grid grid-nogutter pt-5">
+                    <div class="col">
+                        <span class="text-lg text-white"> Logo image*</span><br />
+                        <span class="text-xs text-300"> This image also be used for navigation 350<i
+                                style="font-size: .5rem;" class="pi pi-times"></i>350 recommended.</span>
+                    </div>
+                </div>
+                <div class="grid grid-nogutter pt-5">
+                    <div class="col-fixed ">
+                        <div
+                            class="grid grid-nogutter border-dashed w-12rem h-12rem border-circle border-300 align-items-center justify-content-center">
+                            <div><i class="pi pi-image text-7xl text-300 font-light"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-nogutter pt-5">
+                    <div class="col">
+                        <span class="text-lg text-white"> Featured image</span><br />
+                        <span class="text-xs text-300"> (Optional) This image used for featuring your collection on the
+                            home page,or other promotional areas 600<i style="font-size: .5rem;"
+                                class="pi pi-times"></i>400 recommended.</span>
+                    </div>
+                </div>
+                <div class="grid grid-nogutter pt-5">
+                    <div class="col-fixed ">
+                        <div
+                            class="grid grid-nogutter border-dashed w-20rem h-12rem border-round border-300 align-items-center justify-content-center">
+                            <div><i class="pi pi-image text-7xl text-300 font-light"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-nogutter pt-5">
+                    <div class="col">
+                        <span class="text-lg text-white"> Banner image</span><br />
+                        <span class="text-xs text-300"> (Optional) This image appear ath the top of your collection
+                            page. 1400<i style="font-size: .5rem;" class="pi pi-times"></i>400 recommended.</span>
+                    </div>
+                </div>
+                <div class="grid grid-nogutter pt-5">
+                    <div class="col-fixed ">
+                        <div
+                            class="grid grid-nogutter border-dashed w-30rem h-12rem border-round border-300 align-items-center justify-content-center">
+                            <div><i class="pi pi-image text-7xl text-300 font-light"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-nogutter pt-5">
+                    <div class="col">
+                        <span class="text-lg text-white"> Name*</span><br />
+                    </div>
+                </div>
+                <div class="grid grid-nogutter pt-2">
+                    <div class="col-fixed ">
+                        <input class="w-30rem" type="text" pInputText />
+                    </div>
+                </div>
+
+                <div class="grid grid-nogutter pt-5">
+                    <div class="col">
+                        <span class="text-lg text-white"> Description</span><br />
+                    </div>
+                </div>
+                <div class="grid grid-nogutter pt-2">
+                    <div class="col-fixed ">
+                        <textarea class="w-30rem" rows="5" cols="30" pInputTextarea [autoResize]="true"></textarea>
+                    </div>
+                </div>
+
+                <div class="grid grid-nogutter pt-3">
+                    <div class="col">
+                        <p-button label="Create"></p-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

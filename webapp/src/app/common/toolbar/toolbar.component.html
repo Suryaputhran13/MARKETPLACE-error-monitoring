@@ -1,0 +1,44 @@
+<div class="mainToolbar grid grid-nogutter  border-bottom-2 border-200 align-content-center">
+    <div class="col-fixed align-self-center p-3 flex">
+        <!-- <img routerLink="/dashboard" style="width: 120px; height: 75px;" class="cursor-pointer"
+            src="assets/Images/nftLofo.jpg" alt="Image" /> -->
+    </div>
+    <div class=" hidden md:flex col-fixed align-self-center ">
+        <div class="grid grid-nogutter align-content-center">
+            <div routerLink="/dashboard" routerLinkActive="text-primary"
+                class="col-fixed align-self-center p-3 cursor-pointer text-xl font-semibold"> Explore</div>
+            <div routerLink="/gaming-igo" class="col-fixed align-self-center p-3 cursor-pointer text-xl font-semibold">
+                Gaming/ IGO</div>
+            <div routerLink="/marketplace" class="col-fixed align-self-center p-3 cursor-pointer text-xl font-semibold">
+                Market place</div>
+            <div routerLinkActive="text-primary"
+                class="col-fixed align-self-center p-3 cursor-pointer text-xl font-semibold"> Create Collection</div>
+            <div routerLinkActive="text-primary"
+                class="col-fixed align-self-center p-3 cursor-pointer text-xl font-semibold"> Create NFT</div>
+        </div>
+    </div>
+
+    <div class="col align-self-center p-3">
+        <span class="p-input-icon-left w-full">
+            <i class="pi pi-search"></i>
+            <input type="text" pInputText placeholder="Search" [(ngModel)]="searchValue" class="w-full" />
+        </span>
+        <!-- <input type="search"/> -->
+    </div>
+    <div class="col-fixed align-self-center pr-4 ">
+        <div class="grid grid-nogutter align-content-center">
+            <!-- <div class="col-fixed align-self-center "> 
+                <button pButton pRipple type="button" label="Login" class="p-button-text mr-1"></button>
+            </div>
+            <div class="col-fixed align-self-center">  
+                <button pButton pRipple type="button" label="Register" class="p-button-sm"></button>
+            </div> -->
+            <div class="col-fixed align-self-center">
+                <button pButton pRipple type="button" icon="pi pi-user" style="width: 3rem; height: 3rem;"
+                    class="p-button-rounded p-button-info p-button-outlined p-button-lg"></button>
+                <!-- <p-avatar icon="pi pi-user" styleClass="mr-2" size="large" [style]="{'background-color':'#2196F3', 'color': '#ffffff','cursor': 'pointer'}" shape="circle" (click)="menu.toggle($event)"></p-avatar> -->
+                <p-menu #menu [popup]="true" [model]="items"></p-menu>
+            </div>
+        </div>
+    </div>
+</div>

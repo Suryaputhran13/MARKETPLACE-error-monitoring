@@ -1,0 +1,100 @@
+<!-- Toolbar component section -->
+<app-toolbar></app-toolbar>
+
+<!-- Content section starts -->
+<div style="overflow-x: hidden;" class="grid grid-nogutter min-h-screen">
+    <!-- Banner section starts -->
+    <!-- <p-galleria [value]="dummyCarouslData"
+        [containerStyle]="{'width': '100vw','min-height': '520px','max-height': '520px'}"
+        [numVisible]="5" [circular]="true" [showItemNavigators]="true" [showThumbnails]="false" [showIndicators]="true"
+        [showItemNavigatorsOnHover]="true" [showIndicatorsOnItem]="true" [circular]="true"
+        [autoPlay]="true" [transitionInterval]="4000">
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item" style="height: 520px;
+        width: 100%;
+        object-fit: cover;
+        transform: none;background: none;" />
+        </ng-template>
+    </p-galleria> -->
+    <carousel [slides]="dummyCarouselData"></carousel>
+
+    <!-- Banner section ends -->
+    <!-- Top Collections Section Starts -->
+    <ng-container *ngIf="false">
+        <div class="grid grid-nogutter align-content-center w-full p-6">
+            <div class="col align-self-center">
+                <span class="mainLabel text-white">Top Collections</span>
+            </div>
+            <div class="col-fixed flex align-items-center">
+                <span class="subLabel mr-2 text-primary">Discover more</span>
+                <button pButton pRipple type="button" icon="pi pi-arrow-right" class="p-button-rounded moreButton"
+                    styleClass="p-button-sm"></button>
+            </div>
+        </div>
+        <div class="grid grid-nogutter justify-content-start pl-3 pr-3 w-full">
+            <ng-container *ngFor="let data of collectionList">
+                <div class="col-3 p-2 cursor-pointer">
+                    <item-card [itemData]="data" [itemConfig]="{isCollection:true,isShowCollectionButton:false}">
+                    </item-card>
+                </div>
+
+            </ng-container>
+            <!-- <div *ngFor="let data of collectionList" class="col-3 p-2 cursor-pointer">
+                <div (click)="onProductClick(data)" class="baseGlassCard glassCardTile grid grid-nogutter p-3">
+                    <div class="col-12">
+                        <img style="height: 270px; min-width: 270px;" [src]="getImage(data)" alt="Image" width="100%"/>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <div class="grid grid-nogutter">
+                            <div class="col-6 text-left font-light text-primary">Dummy value</div>
+                            <div class="col-6 text-right font-light text-primary">Price</div>
+                        </div>
+                        <div class="grid grid-nogutter mt-1">
+                            <div class="col text-left text-lg font-medium text-white">Dummy value Name</div>
+                            <div class="col-fixed text-right text-lg font-medium text-white">ETH 3.33</div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </ng-container>
+    <!-- Top Collections Section Ends -->
+
+    <!-- Mystery box trending section starts -->
+    <ng-container>
+        <div class="grid grid-nogutter align-content-center w-full p-6">
+            <div class="col align-self-center">
+                <span class="mainLabel text-white">Trending</span>
+            </div>
+            <div class="col-fixed flex align-items-center">
+                <span class="subLabel mr-2 text-primary">Discover more</span>
+                <button pButton pRipple type="button" icon="pi pi-arrow-right" class="p-button-rounded moreButton"
+                    styleClass="p-button-sm"></button>
+            </div>
+        </div>
+        <div class="grid grid-nogutter justify-content-between pl-3 pr-3 w-full">
+            <div *ngFor="let data of dummyArray" class="col-3 p-2 cursor-pointer">
+                <div (click)="onProductClick(data)" class="baseGlassCard glassCardTile grid grid-nogutter p-3">
+                    <div class="col-12">
+                        <img style="object-fit: cover; height: 270px; min-width: 270px;" [src]="data" alt="Image"
+                            width="100%" />
+                    </div>
+                    <div class="col-12 mt-2">
+                        <div class="grid grid-nogutter">
+                            <div class="col-6 text-left font-light text-primary">Dummy value</div>
+                            <div class="col-6 text-right font-light text-primary">Price</div>
+                        </div>
+                        <div class="grid grid-nogutter mt-1">
+                            <div class="col text-left text-lg font-medium text-white">Dummy value Name</div>
+                            <div class="col-fixed text-right text-lg font-medium text-white">ETH 3.33</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+    <!-- Mystery box trending section ends -->
+
+</div>
+<!-- Content section ends -->
+<app-footer></app-footer>

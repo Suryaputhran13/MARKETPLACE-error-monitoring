@@ -1,0 +1,31 @@
+
+    <div (click)="onProductClick(itemData)" class="baseGlassCard glassCardTile grid grid-nogutter p-3">
+        <div class="col-12">
+            <img style="height: 270px; min-width: 270px;" [src]="getImage(itemData)" alt="Image" width="100%"/>
+        </div>
+        <div class="col-12 mt-2">
+            <ng-container *ngTemplateOutlet="itemConfig.isCollection ? collectionDesc: nftContentDesc"></ng-container>
+        </div>
+    </div>
+
+<ng-template #nftContentDesc>
+    <div class="grid grid-nogutter">
+        <div class="col-6 text-left font-light text-primary">Dummy value</div>
+        <div class="col-6 text-right font-light text-primary">Price</div>
+    </div>
+    <div class="grid grid-nogutter mt-1">
+        <div class="col text-left text-lg font-medium text-white">Dummy value Name</div>
+        <div class="col-fixed text-right text-lg font-medium text-white">ETH 3.33</div>
+    </div>
+</ng-template>
+
+<ng-template #collectionDesc>
+    <div class="grid grid-nogutter text-lg text-primary font-medium text-center ">
+        <div class="col-12 text-lg text-primary font-medium text-center">{{itemData.data.name}}</div>
+    </div>
+    <div class="grid grid-nogutter">
+        <div  class="col m-3 p-2 chipButton text-center cursor-pointer">
+            <span class="font-medium">Open Collection</span>
+        </div>
+    </div>
+</ng-template>

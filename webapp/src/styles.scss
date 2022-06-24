@@ -1,0 +1,121 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import "~primeflex/primeflex.css";
+@import "~primeng/resources/primeng.min.css";
+@import "~primeicons/primeicons.css";
+@import "~primeng/resources/themes/saga-blue/theme.css";
+
+body {
+
+    --border-radius: 16px;
+    margin: 0 !important;
+    font-family: 'Fredoka', sans-serif;
+    transition: all .2s ease-in-out;
+    //     background-color: #29539b;
+    // background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+    background: rgb(3, 1, 42);
+    background: -moz-linear-gradient(317deg, rgba(3, 1, 42, 1) 13%, rgba(6, 6, 81, 1) 87%, rgba(0, 7, 83, 1) 100%);
+    background: -webkit-linear-gradient(317deg, rgba(3, 1, 42, 1) 13%, rgba(6, 6, 81, 1) 87%, rgba(0, 7, 83, 1) 100%);
+    background: linear-gradient(317deg, rgba(3, 1, 42, 1) 13%, rgba(6, 6, 81, 1) 87%, rgba(0, 7, 83, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03012a", endColorstr="#000753", GradientType=1);
+
+    .glassCardTile {
+        img {
+            border-radius: 8px;
+        }
+
+        transition: transform .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+
+    .commonRadius {
+        border-radius: var(--border-radius);
+    }
+
+    .baseGlassCard {
+        background: rgba(65, 74, 176, 0.151);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        // backdrop-filter: blur(0.8px);
+        // -webkit-backdrop-filter: blur(0.8px);
+        border: 1px solid rgba(65, 75, 176, 0.52);
+    }
+
+    .tabGroup {
+
+        .tabItem {
+            border-radius: 25px;
+            color: white;
+            border: 1px solid var(--blue-500);
+
+            &.active {
+                background-color: var(--blue-500);
+
+            }
+        }
+
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid var(--blue-500);
+        color: white;
+
+        tr:nth-child(1) {
+            // background-color: var(--blue-500);
+            border: 1px solid var(--blue-500);
+            color: var(--blue-500);
+        }
+
+        tr:nth-child(even) {
+            border-bottom: 1px solid var(--blue-500);
+        }
+
+        td,
+        th {
+            padding: 1rem;
+        }
+    }
+
+    .p-inputtext {
+        background: transparent;
+        border: 1px solid var(--blue-500);
+        color: white;
+    }
+
+    .p-dropdown {
+        background: transparent;
+        border: 1px solid var(--blue-500);
+        color: white;
+        width: 30rem;
+    }
+
+    .p-dropdown-panel {
+        background: rgb(3, 1, 42);
+        background: -moz-linear-gradient(317deg, rgba(3, 1, 42, 1) 13%, rgba(6, 6, 81, 1) 87%, rgba(0, 7, 83, 1) 100%);
+        background: -webkit-linear-gradient(317deg, rgba(3, 1, 42, 1) 13%, rgba(6, 6, 81, 1) 87%, rgba(0, 7, 83, 1) 100%);
+        background: linear-gradient(317deg, rgba(3, 1, 42, 1) 13%, rgba(6, 6, 81, 1) 87%, rgba(0, 7, 83, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03012a", endColorstr="#000753", GradientType=1);
+        color: white;
+
+        & .p-dropdown-items .p-dropdown-item {
+            color: white;
+        }
+    }
+
+    .p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover {
+        background-color: var(--blue-500) !important;
+        color: white;
+    }
+
+    .chipButton{
+        border-radius: 25px;
+        color: white;
+        border: 1px solid var(--blue-500);
+        background-color: var(--blue-500);
+    }
+}
