@@ -1,5 +1,5 @@
 
-const ATLAS_URI = "mongodb+srv://eos-sarath:u21o5mMlPsKqBFUt@eosio.sd4x2.mongodb.net/?retryWrites=true&w=majority";
+const ATLAS_URI = "mongodb+srv://eos-pranoy:u21o5mMlPsKqBFUt@eosio.sd4x2.mongodb.net/?retryWrites=true&w=majority";
 const PORT = 5000;
 const { MongoClient } = require("mongodb");
 const Db = ATLAS_URI;
